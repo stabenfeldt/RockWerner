@@ -1,0 +1,1344 @@
+      div.break {
+  clear: both;
+}
+
+body.home, body.our_services { display: inline; }
+
+div.page {
+  width: 799px;
+  margin: auto;
+  text-align: left;
+}
+
+body.open-positions_top div.page-content {
+  width: 799px;
+}
+
+
+
+h2#stefan {
+ margin-top: 104px;
+}
+
+div#katarin {
+  margin-top: 107px;
+  height: 230px;
+  }
+  div#katarin img {
+    margin-top: -40px;
+  }
+
+
+
+div.top-menu {
+  margin-top: 40px;
+  background-image: url(/images/top_menu_bg-800.png);
+  background-repeat: no-repeat;
+  padding: 4px 10px 5px 16px;
+}
+
+/*  LINKS #top_nav */
+div.top-menu a{
+  text-decoration: none;
+  color: #544e4f;
+  margin-right: 36px;
+}
+
+
+div.top-menu a.selected{
+  color: #980000;
+}
+
+div.page-frame{
+  margin-top: 10px;
+  position: relative;
+}
+
+div.border-top{
+  margin: 0px;
+  height: 14px;
+  background-image: url(/images/content_top.png);
+  background-repeat: no-repeat;
+}
+
+div.border-bottom{
+  margin: 0px;
+  height: 24px;
+}
+
+
+img.logo {
+  position: relative;
+  float: right;
+  top: 14px;
+  right: 45px ;
+}
+
+body.about_us p {
+  width: 523px;
+}
+
+body.about_us div.right_column,
+body.contact_us div.right_column 
+{
+  display: none;
+}
+
+body.contact_us iframe{
+  margin: 50px 0 0 0;
+}
+
+.right_column {
+   position: relative;
+   float: right;
+   left: 127px;
+   top: 88px;
+   height: 200px;
+ }
+ 
+div.log a{
+  text-decoration: none;
+}
+
+div.content {
+  position: relative;
+  padding: 25px 180px 10px 52px;
+  width: 552px ;
+}
+
+
+
+
+div.contact-ulf{
+  float: left;
+  width: 210px;
+  margin-left: 20px;
+}
+
+div.contact-stefan{
+  float: right;
+  width: 220px;
+  margin-right: 20px;
+}
+
+div.page-footer table.contact td{
+  padding-right: 10px;
+}
+
+
+div.login
+{
+  padding-left: 20px;
+}
+div.login a
+{
+  text-decoration: none;
+}
+
+
+/*** Content **/
+
+
+div.content-body{
+  padding-right: 0px;
+}
+
+div.intro{
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: justify;
+/* CSS3 only
+  text-justify: newspaper;
+*/
+}
+
+div.text{
+  margin-top: 20px;
+  text-align: justify;
+/* CSS3 only
+  text-justify: newspaper;
+*/
+}
+
+div.text table.cols td p
+{
+  padding-right: 40px;
+}
+
+div.text table.cols td
+{
+  padding-bottom: 40px;
+}
+
+
+
+div.text ul li
+{
+  margin-top: 10px;
+}
+ 
+
+
+body.contact_us div.left  {  float: left }
+body.contact_us div.right {  float: right }
+
+
+
+
+/*  TOP MENU
+-------------------------------------*/
+
+
+div.top-menu ul li {
+  text-decoration:none;
+  display:inline;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+body
+{
+/*
+    color: #535548;
+    background-color: #ffffff;
+*/
+    text-align: center; /* IE method for centering page if it has fixed width */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* TABLES */
+
+table
+{
+    font-size: 1em; /* Fix for size "loss" in tables in IE; redundant for most other browsers */
+    margin: 0;
+    padding: 0;
+}
+
+th, td
+{
+    padding: 0;
+}
+
+table.list /* Standard class usable for most regular tables presenting lists, with additional related styles */
+{
+    width: 100%;
+    margin: 1em 0 1em 0;
+    border: none;
+}
+
+table.list th, table.list td
+{
+    padding: 0.5em;
+    border-right: 1px solid #ffffff;
+    border-bottom: none;
+    vertical-align: top;
+}
+
+table.list th
+{
+    font-weight: bold;
+    color: #525345;
+    background-color: #DFDFDF;
+    white-space: nowrap;
+    text-align: left;
+    background-image: url(../images/th_bg.png);
+    background-repeat: repeat-x;
+    background-position: top left;
+}
+
+table.list td
+{
+    border-top: 1px solid #f8f8f8;
+    font-weight: normal;
+}
+
+table.list th:first-child, table.list td:first-child
+{
+    border-left: 1px solid #ffffff;
+}
+
+table.list tr.bglight
+{
+    background-color: #F1F1ED;
+}
+
+table.list tr.bgdark
+{
+    background-color: #EAE9E1;
+}
+
+table.list tr.bglight:hover, table.list tr.bgdark:hover /* This has no effect in IE6 and below */
+{
+    background-color: #ffffff;
+}
+
+table.list tr.bglight:hover td, table.list tr.bgdark:hover td
+{
+    border-color: #ffffff;
+}
+
+table.list a
+{
+    border-bottom-color: #EAE9E1;
+}
+
+table.list img
+{
+    vertical-align: middle;
+}
+
+th.tight, td.tight
+{
+    width: 1%;
+}
+
+td.nowrap
+{
+    white-space: nowrap;
+}
+
+td.number
+{
+    text-align: right;
+}
+
+/* ORDERED AND UNORDERED LISTS */
+
+ul, ol
+{
+/*  margin: 0.75em 0 1em 2.5em;  */
+    margin: 0 0 0em 2.5em;
+    padding: 0;
+}
+
+ul ul, ol ul
+{
+    margin: 0.3em 0 0.5em 1.3em;
+}
+
+ul ol, ol ol
+{
+    margin: 0.3em 0 0.5em 1.9em;
+}
+
+li
+{
+    margin: 0 0 0.3em 0;
+    padding: 0;
+    line-height: 1.25em;
+}
+
+/* DEFINITION LISTS */
+
+dl
+{
+    margin: 0.25em 0 0.25em 0;
+    padding: 0;
+}
+
+dt, dd
+{
+    font-style: normal;
+    margin: 0 0 0.25em 0;
+}
+
+dt
+{
+    font-weight: bold;
+}
+
+dd
+{
+    margin: 0 1em 0.5em 2.5em;
+}
+
+
+/* FORM ELEMENTS */
+
+form
+{
+    margin: 0;
+    padding: 0;
+}
+
+label
+{
+    font-weight: bold;
+    padding-right: 0.5em;
+    display: block;
+    white-space: nowrap;
+}
+
+input, select
+{
+    font-family: Arial, Helvetica, sans-serif; /* Needs to be set for some browsers, to prevent other default font from being used */
+}
+
+input.box, input.halfbox
+{
+    font-size: 1em;
+}
+
+textarea
+{
+    font-family: Arial, Helvetica, sans-serif; /* Usually defaulted to monospaced font; so it needs to be set if to change */
+    font-size: 1em; /* Needs to be specified for IE */
+}
+
+optgroup
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+input.button, button, input.defaultbutton
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8em;
+    color: #343434;
+}
+
+input.box, textarea.box
+{
+    width: 100%;
+    border: 1px solid #A5ACB2;
+    font-size: 1em;
+}
+
+input.halfbox, textarea.halfbox
+{
+    width: 48%;
+}
+
+div.input, div.textarea
+{
+    margin: 0.5em 0 0.5em 0;
+    padding: 0 0.25em 0 0.25em;
+    border: 1px solid;
+    border-color: #808080 #e0e0e0 #e0e0e0 #808080;
+}
+
+div.textarea
+{
+    padding-right: 0;
+}
+
+div.input input, div.textarea textarea
+{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+fieldset
+{
+    border: 1px solid #ccccc3;
+    padding: 0.5em;
+}
+
+legend
+{
+    font-weight: bold;
+    color: #000000;
+    padding: 0 0.25em 0 0.25em;
+}
+
+fieldset label
+{
+    color: #000000;
+}
+
+fieldset input.button
+{
+    margin-top: 0.5em;
+}
+
+/* HORIZONTAL RULERS */
+
+hr /* General formatting for all horizontal rulers */
+{
+    color: #ffffff; /* Color must be set to the same as the background color to hide default formatting in IE */
+    border: none; /* All borders must be removed as they are default for Opera */
+    border-top: 1px solid #e0e0e0; /* This single top border is the one replacing the default look of the ruler */
+    height: 1px;
+    margin: 0.35em 0 0.35em 0; /* Be aware that these margins may not be calculated consistently across browsers */
+}
+
+
+/* MESSAGES TO THE USER */
+
+div.message-confirmation, div.message-feedback, div.message-warning, div.message-error, div.warning
+{
+    margin: 0.5em 0 1em 0;
+    padding: 0.5em 1em 0.5em 1em;
+    border: 6px solid #808080;
+    background-color: #f8f8f8;
+}
+
+div.message-feedback
+{
+    border-color: #40b040;
+}
+
+div.message-warning, div.warning
+{
+    border-color: #c0c040;
+}
+
+div.message-error
+{
+    border-color: #c04040;
+}
+
+
+/* The remaining styles are important for proper content rendering in eZ publish - Do not remove or alter them without proper knowledge of the possible consequences */
+
+/* POSITION CONTROL */
+
+div.block /* Used around groups of objects which are connected in some way, and requires extra margins to the surroundings */
+{
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+    clear: both;
+}
+
+div.block div.element /* Used if several objects are to be stacked horizontally within the same block */
+{
+    padding-right: 1em;
+    float: left;
+}
+
+div.block div.left /* Floats elements to the left in a block */
+{
+    width: 48%;
+    float: left;
+    clear: left;
+}
+
+div.block div.right /* Floats elements to the right in a block */
+{
+    width: 48%;
+    float: right;
+    clear: right;
+}
+
+p.text-left, td.text-left, th.text-left, *.text-left
+{
+    text-align: left;
+}
+
+p.text-right, td.text-right, th.text-right, *.text-right
+{
+    text-align: right;
+}
+
+p.text-center, td.text-center, th.text-center, *.text-center
+{
+    text-align: center;
+}
+
+/* CSS3 only
+
+p.text-justify, td.text-justify, th.text-justify, *.text-justify
+{
+    text-align: justify;
+}
+
+*/
+
+div.object-left, table.object-left /* Used for floating images and other content elements to the left inside other content */
+{
+    margin: 0.25em 0.25em 0.25em 0;
+    float: left;
+    clear: left;
+}
+
+div.object-right, table.object-right /* Used for floating images and other content elements to the right inside other content */
+{
+    margin: 0.25em 0 0.25em 0.25em;
+    float: right;
+    clear: right;
+}
+
+div.object-center, table.object-center
+{
+    margin: 0.25em auto 0.25em auto;
+}
+
+.float-break
+{
+    height: 1%; /* Fix for IE */
+}
+
+.float-break:after /* Terminate floating elements flow */
+{
+    content: "-";
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+div.break /* Old method for terminating floating elements flow; kept for backwards compatibility */
+{
+    clear: both;
+    font-size: 1px; /* Fix for IE */
+    height: 1px;
+    margin-bottom: -1px;
+}
+
+
+/* MISCELLANEOUS STYLES */
+
+div.oe-window /* Needed by OE 5.0 when translating content */
+{
+    clear: both;
+}
+
+.hide /* Used on elements which should only be visible if CSS in disabled or unavailable */
+{
+    display: none;
+}
+
+.spamfilter /* Simple fix for stopping spambots from getting correct e-mail addresses from a web page: info<span class="spamfilter>SPAMFILTER</span>@ez.no <span class="spamfilter>(Remove SPAMFILTER to reply)</span> */
+{
+    display: none;
+}
+
+img{
+	border-style: none;
+}
+
+
+.inline_image {
+	float:right;
+}
+
+.inline_image img{
+ display: inline;
+ position: absolute;
+ right: 52px;
+}
+
+.inline_image img#ulf {
+ top: 110px ;
+}
+
+.inline_image img#stefan {
+ top: 321px;
+}
+
+
+
+
+
+
+/* TABLES */
+
+table
+{
+    font-size: 1em; /* Fix for size "loss" in tables in IE; redundant for most other browsers */
+    margin: 0;
+    padding: 0;
+}
+
+th, td
+{
+    padding: 0;
+}
+
+table.list /* Standard class usable for most regular tables presenting lists, with additional related styles */
+{
+    width: 100%;
+    margin: 1em 0 1em 0;
+    border: none;
+}
+
+table.list th, table.list td
+{
+    padding: 0.5em;
+    border-right: 1px solid #ffffff;
+    border-bottom: none;
+    vertical-align: top;
+}
+
+table.list th
+{
+    font-weight: bold;
+    color: #525345;
+    background-color: #DFDFDF;
+    white-space: nowrap;
+    text-align: left;
+    background-image: url(../images/th_bg.png);
+    background-repeat: repeat-x;
+    background-position: top left;
+}
+
+table.list td
+{
+    border-top: 1px solid #f8f8f8;
+    font-weight: normal;
+}
+
+table.list th:first-child, table.list td:first-child
+{
+    border-left: 1px solid #ffffff;
+}
+
+table.list tr.bglight
+{
+    background-color: #F1F1ED;
+}
+
+table.list tr.bgdark
+{
+    background-color: #EAE9E1;
+}
+
+table.list tr.bglight:hover, table.list tr.bgdark:hover /* This has no effect in IE6 and below */
+{
+    background-color: #ffffff;
+}
+
+table.list tr.bglight:hover td, table.list tr.bgdark:hover td
+{
+    border-color: #ffffff;
+}
+
+table.list a
+{
+    border-bottom-color: #EAE9E1;
+}
+
+table.list img
+{
+    vertical-align: middle;
+}
+
+th.tight, td.tight
+{
+    width: 1%;
+}
+
+td.nowrap
+{
+    white-space: nowrap;
+}
+
+td.number
+{
+    text-align: right;
+}
+
+/* ORDERED AND UNORDERED LISTS */
+
+ul, ol
+{
+/*  margin: 0.75em 0 1em 2.5em;  */
+    margin: 0 0 0em 2.5em;
+    padding: 0;
+}
+
+ul ul, ol ul
+{
+    margin: 0.3em 0 0.5em 1.3em;
+}
+
+ul ol, ol ol
+{
+    margin: 0.3em 0 0.5em 1.9em;
+}
+
+li
+{
+    margin: 0 0 0.3em 0;
+    padding: 0;
+    line-height: 1.25em;
+}
+
+/* DEFINITION LISTS */
+
+dl
+{
+    margin: 0.25em 0 0.25em 0;
+    padding: 0;
+}
+
+dt, dd
+{
+    font-style: normal;
+    margin: 0 0 0.25em 0;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin: 0 1em 0.5em 2.5em;
+}
+
+
+/* FORM ELEMENTS */
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+  font-weight: bold;
+  padding-right: 0.5em;
+  display: block;
+  white-space: nowrap;
+}
+
+.print_me {
+  position: relative;
+  bottom: 25px;
+  left: 52px;
+}
+
+
+body.open-positions li {
+  margin: 25px 0;
+  }
+  body.open-positions ul.front {
+    margin: 0 0 0 0em;
+    list-style: none;
+    }
+    body.open-positions ul.front li {
+      margin: 0 0 -4px 0;
+    }
+
+
+body.open-positions-top div.job_listing li {
+  margin: 30px 0;
+}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+      body {
+  background-image: url(/images/bg_new.jpeg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  color: #535548;
+  background-color: #ffffff;
+  text-align: center; /* IE method for centering page if it has fixed width */
+  margin: 0;
+  padding: 0;
+}
+
+div.page-content {
+  margin: 0px;
+  background-color: #ffffff;
+/*  CSS3 only  */  
+   filter: alpha(opacity=85);
+  -moz-opacity:0.85;
+  opacity: 0.85;
+  -khtml-opacity: 0.85;
+}
+
+body.open-positions div.border-bottom {
+  -moz-opacity:0.99;
+  opacity: 0.9999;
+  -khtml-opacity: 0.99;
+}
+
+div.border-bottom {
+  margin: 0px;
+  background-image: url(/images/content_bottom-800.png);
+  background-repeat: no-repeat;
+  -moz-opacity:0.85;
+  opacity: 0.9999;
+  -khtml-opacity: 0.85;
+}
+
+
+div.text h3, div.text h4
+{
+  color: #980000;
+}
+
+h4
+{
+  color: #980000;
+}
+
+body.contact_us a {
+ color: #000000;
+}
+
+body.contact_us a:hover {
+ color: #000000;
+}
+
+
+
+a {
+  color: #000000;
+}
+
+
+
+/*** Active Page
+-------------------------------------*/
+
+    body.talent_on_demand div.top-menu a.talent_on_demand
+      {
+        font-weight: bold;
+        color: #A7201C;
+      }
+
+
+body.open-positions div.top-menu a.open-positions-top
+{
+  font-weight: bold;
+  color: #A7201C;
+}
+
+
+  
+    body.contact_us div.top-menu a.contact_us
+      {
+        font-weight: bold;
+        color: #A7201C;
+      }
+  
+    body.our_services div.top-menu a.our_services
+      {
+        font-weight: bold;
+        color: #A7201C;
+      }
+  
+    body.about_us div.top-menu a.about_us
+      {
+        font-weight: bold;
+        color: #A7201C;
+      }
+  
+    body.open-positions-top div.top-menu a.open-positions-top
+      {
+        font-weight: bold;
+        color: #A7201C;
+      }
+  
+
+
+
+
+a
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+div.page-footer {
+  color: #ffffff;
+}
+
+div.page-footer{
+  margin-top: 15px;
+  margin-bottom: 50px;
+  filter: alpha(opacity=85);
+  -moz-opacity:0.85;
+  opacity: 0.85;
+  -khtml-opacity: 0.85;
+}
+
+
+div.page-footer a {
+ color: #FFFFFF;
+}
+      /* TYPO.CSS
+----------------------------------------*/
+
+body {
+  font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.8em;
+    background-color: #000000;
+    color: #000000;
+}
+
+
+input, select
+{
+    font-family: Arial, Helvetica, sans-serif; /* Needs to be set for some browsers, to prevent other default font from being used */
+}
+
+input.box, input.halfbox
+{
+    font-size: 1em;
+}
+
+textarea
+{
+    font-family: Arial, Helvetica, sans-serif; /* Usually defaulted to monospaced font; so it needs to be set if to change */
+    font-size: 1em; /* Needs to be specified for IE */
+}
+
+optgroup
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+input.button, button, input.defaultbutton
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8em;
+    color: #343434;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 /* Set general styles for all headings; some may be overridden later */
+{
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+h1
+{
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+h1.header{
+  font-size: 2em;
+  color: #980000;
+  padding: 0;
+  margin: 0 0 15px 0;
+  font-family: Verdana;
+}
+
+h2
+{
+    font-size: 1.3em;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5
+{
+    font-size: 1em;
+}
+
+h6
+{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+/* PARAGRAPHS */
+
+p
+{
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1.25em; /* This is aprox. default line height in most popular browsers; set explicitly to ensure consitency. */
+}
+
+
+/* LINKS */
+
+a
+{
+    text-decoration: underline;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a img
+{
+    border: none; /* Some browsers may display a border around a linked image without this attribute set to _none_. */
+}
+
+
+/* PRE TEXT */
+
+pre, code
+{
+    font-family: "Courier New", Courier, monospace; /* Usually defaulted to monospaced font anyway, but browwsers may vary which one is used, so giving exact alternatives helps visual consistenct */
+    font-size: 1em; /* Setting this exact size may also help visual consistency */
+}
+
+pre
+{
+    background-color: #f8f8f8;
+    margin: 1em 0 1em 0;
+    padding: 0.2em;
+    border: 1px solid #e0e0e0;
+}
+
+pre.wordwrap /* Style for ensuring long lines in pre field won't break the design; use &nbsp; instead to preserve white-space where desired */
+{
+    white-space: normal;
+}
+
+pre.wordwrap span.line /* Style for tag wrapping around each line of text */
+{
+    display: block;
+}
+
+
+body.about_us h2 {
+ font-weight: bold;
+ font-size: 1.2em;
+}
+
+div.page-footer{
+  color: #ffffff;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center; 
+}
+
+strong {
+ margin-top: 0;
+}
+
+span.print_me {
+    text-decoration: underline;
+}
+
+body.open-positions ul.front a {
+  text-decoration: none;
+  line-height: 0px;
+}
+
+body.open-positions ul.front li {
+  font-size: 1.05em;
+}
+
+      /* Website Toolbar */
+
+div#ezwt
+{
+    margin: 0.5em auto 0.5em auto;
+}
+
+div#ezwt div.tl
+{
+    background: url(../images/websitetoolbar/ezwt-tl.gif) no-repeat top left;
+}
+
+div#ezwt div.tr
+{
+    background: url(../images/websitetoolbar/ezwt-tr.gif) no-repeat top right;
+}
+
+div#ezwt div.tc
+{
+    background: url(../images/websitetoolbar/ezwt-tc.gif) repeat-x top left;
+}
+
+div#ezwt div.mc
+{
+    background: #e8eaec url(../images/websitetoolbar/ezwt-mc.gif) repeat-x center left;
+}
+
+div#ezwt div.ml
+{
+    background: url(../images/websitetoolbar/ezwt-ml.gif) repeat-y center left;
+}
+
+div#ezwt div.mr
+{
+    background: url(../images/websitetoolbar/ezwt-mr.gif) repeat-y center right;
+}
+
+div#ezwt div.bl
+{
+    background: url(../images/websitetoolbar/ezwt-bl.gif) no-repeat bottom left;
+}
+
+div#ezwt div.br
+{
+    background: url(../images/websitetoolbar/ezwt-br.gif) no-repeat bottom right;
+}
+
+div#ezwt div.bc
+{
+    background: url(../images/websitetoolbar/ezwt-bc.gif) repeat-x bottom left;
+}
+
+div#ezwt div.tc, div#ezwt div.bc
+{
+    height: 4px;
+    font-size: 0;
+}
+
+div#ezwt div.tr, div#ezwt div.mr, div#ezwt div.br
+{
+    padding: 0 4px 0 4px;
+}
+
+div#ezwt-ezlogo
+{
+    margin: 3px 4px 2px 2px;
+    float: left;
+    display: inline; /* Fix for IE */
+}
+
+div#ezwt-oologo
+{
+    margin: 2px 4px 0 2px;
+    float: right;
+}
+
+div#ezwt form
+{
+    margin: 0;
+    padding: 0;
+}
+
+div#ezwt .left
+{
+    margin-left: 4px;
+    float: left;
+    display: inline; /* Fix for IE */
+}
+
+div#ezwt .right
+{
+    margin-right: 4px;
+    float: right;
+    display: inline; /* Fix for IE */
+}
+
+div#ezwt select, div#ezwt input
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85em;
+}
+
+div#ezwt select
+{
+    color: #4a5054;
+    background-color: #f0f2f4;
+    margin: 2px 0 2px 0;
+    padding: 0;
+    border: 1px solid #ccd2d6;
+    border-color: #abb1b5 #ffffff #ffffff #abb1b5;
+    vertical-align: top;
+}
+
+div#ezwt input
+{
+    margin: 1px 0 0 0;
+}
+
+div#ezwt input.button
+{
+    color: #4a5054;
+    height: 1.8em;
+    background: #f2f4f6 url(../images/websitetoolbar/ezwt-button-bg.gif) repeat-x center left;
+    padding: 0 0.25em 0 0.25em;
+    border: 1px solid;
+    border-color: #ffffff #abb1b5 #abb1b5 #ffffff;
+    overflow: visible;
+}
+
+div#ezwt-help
+{
+    margin: 2px 3px 0 3px;
+    float: right;
+    display: inline; /* Fix for IE */
+}
+
+div#ezwt-help p
+{
+    margin: 0;
+    vertical-align: middle;
+}
+
+div#ezwt-help a
+{
+    font-weight: bold;
+    color: #4a5054;
+    padding: 0 2px 0 2px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* General styles */
+
+.hide
+{
+    display: none;
+}
+
+.float-break
+{
+    height: 1%;
+}
+
+.float-break:after
+{
+    content: "-";
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+    display: block; 
+    clear: both; 
+}

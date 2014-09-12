@@ -1,0 +1,33 @@
+body {
+  background-image: none;
+  background-color: #FFF;
+}
+
+div.top-menu, .print_me {
+ display: none ;
+}
+
+a {
+ text-decoration: none;
+}
+
+span.print_me {
+  display: none
+}
+
+div.page-footer {
+  text-align: left;
+  padding-left: 52px;
+}
+
+img.logo { 
+  position: absolute;
+  top: -10px;
+  left: 450px;
+}
+
+div.content {
+ /* padding: 75x 180px 10px 52px;  */
+ top: 50px;
+ padding: 75x 0px 0px 0px;
+}
