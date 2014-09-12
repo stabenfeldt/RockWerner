@@ -40,6 +40,7 @@ GEM
       activesupport (>= 2.3.2)
       cocaine (~> 0.3.0)
       mime-types
+    pg (0.11.0)
     rack (1.1.6)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -104,6 +105,7 @@ PLATFORMS
 DEPENDENCIES
   compass-rails (~> 1.0.3)
   mysql (~> 2.8.1)
+  pg (~> 0.11.0)
   radiant (~> 1.1.4)
   radiant-archive-extension (~> 1.0.7)
   radiant-clipped-extension (~> 1.1.0)

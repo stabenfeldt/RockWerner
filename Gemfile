@@ -24,7 +24,7 @@ gem "compass-rails", "~> 1.0.3"
 gem "mysql", "~> 2.8.1"
 
 # Postgres
-# gem "pg", "~> 0.11.0"
+gem "pg", "~> 0.11.0"
 
 # IBM DB2
 # gem "db2", "~> 2.6.2"
