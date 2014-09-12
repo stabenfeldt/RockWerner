@@ -31,7 +31,7 @@ test:
 
 production:
   adapter: mysql
-  database: fresh-mysql_production
-  username: root
-  password: 
-  host: localhost
+  database:  heroku_22aaa33fbac6a2b
+  username: b85e2269acb34b
+  password: 4a2727ac
+  host: eu-cdbr-west-01.cleardb.com

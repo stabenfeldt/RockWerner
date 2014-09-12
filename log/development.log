@@ -902,3 +902,831 @@ Completed in 1571ms (DB: 1458) | 404 [http://0.0.0.0/images/favicon.png]
   [4;36;1mSQL (42.3ms)[0m   [0;1mSHOW TABLES[0m
   [4;35;1mSQL (42.0ms)[0m   [0mSHOW TABLES[0m
   [4;36;1mSQL (41.5ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (41.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:40:23) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["contact_us"]}
+  [4;36;1mSQL (42.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (41.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (43.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (44.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (43.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'contact_us') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (42.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mSQL (42.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLayout Load (45.0ms)[0m   [0mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mSnippet Columns (43.7ms)[0m   [0;1mSHOW FIELDS FROM `snippets`[0m
+  [4;35;1mSnippet Load (43.2ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (41.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (42.7ms)[0m   [0mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;36;1mSnippet Load (42.2ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;35;1mPagePart Load (42.5ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 6) ORDER BY id, name[0m
+  [4;36;1mPagePart Load (42.2ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 6) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (42.3ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (56.0ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (44.2ms)[0m   [0mSHOW TABLES[0m
+Completed in 1406ms (DB: 1296) | 200 [http://0.0.0.0/contact_us]
+  [4;36;1mSQL (43.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (53.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (41.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (42.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (42.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (44.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (56.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.6ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:40:28) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["stylesheets", "main.css"]}
+  [4;35;1mSQL (49.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (54.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (152.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (49.6ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (47.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'stylesheets') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (47.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (47.3ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'main.css') AND (`pages`.parent_id = 2) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (47.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mSQL (49.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLayout Load (47.0ms)[0m   [0mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 2) ORDER BY name[0m
+  [4;36;1mPagePart Load (47.6ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 11) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (47.0ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 11) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Columns (47.5ms)[0m   [0;1mSHOW FIELDS FROM `snippets`[0m
+  [4;35;1mSnippet Load (95.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'layout.css') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (53.2ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'colors.css') ORDER BY name LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (47.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (47.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'typo.css') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (48.3ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'websitetoolbar.css') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+Completed in 1791ms (DB: 1688) | 200 [http://0.0.0.0/stylesheets/main.css]
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (49.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:40:31) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["stylesheets", "print.css"]}
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (58.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (85.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (48.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (46.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'stylesheets') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (48.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (47.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'print.css') AND (`pages`.parent_id = 2) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (50.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mLayout Load (46.6ms)[0m   [0mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 2) ORDER BY name[0m
+  [4;36;1mPagePart Load (47.0ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 26) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (46.6ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 26) ORDER BY id LIMIT 1[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 1219ms (DB: 1229) | 200 [http://0.0.0.0/stylesheets/print.css]
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.2ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:40:33) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "logo.png"]}
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (67.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (64.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (67.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (54.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (94.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (51.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (51.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (52.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPage Load (51.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mPage Load (51.5ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mLayout Load (52.2ms)[0m   [0mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mSnippet Columns (55.0ms)[0m   [0;1mSHOW FIELDS FROM `snippets`[0m
+  [4;35;1mSnippet Load (54.3ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (52.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (54.5ms)[0m   [0mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;36;1mSnippet Load (52.1ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;35;1mPagePart Load (52.3ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;36;1mPagePart Load (52.6ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (52.0ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (51.8ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSHOW TABLES[0m
+Completed in 1876ms (DB: 1757) | 404 [http://0.0.0.0/images/logo.png]
+  [4;36;1mSQL (53.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (52.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (132.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (52.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:40:37) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "Profile", "Felles-Operaen-h550.png"]}
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (48.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (49.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (59.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (47.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (47.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (50.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (47.1ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (55.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mSQL (59.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mLayout Load (47.3ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (48.5ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (47.0ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (46.6ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (59.5ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (46.4ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (46.3ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (46.4ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;35;1mSnippet Load (54.0ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 1693ms (DB: 1573) | 404 [http://0.0.0.0/images/Profile/Felles-Operaen-h550.png]
+  [4;35;1mSQL (46.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (57.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (60.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.1ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+Cache read: Radiant.cache_mtime
+  [4;36;1mRadiant::Config Load (46.8ms)[0m   [0;1mSELECT * FROM `config` [0m
+  [4;35;1mRadiant::Config Columns (46.8ms)[0m   [0mSHOW FIELDS FROM `config`[0m
+Cache write: Radiant::Config
+Cache write: Radiant.cache_mtime
+  [4;36;1mSQL (47.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (57.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.8ms)[0m   [0;1mSHOW TABLES[0m
+[32mCommand[0m :: convert -version
+[Clipped] Using image thumbnailer: ImageMagick 6.8.9-5 Q16 x86_64 2014-07-25 http://www.imagemagick.org
+  [4;35;1mSQL (46.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (45.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (45.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Columns (47.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (48.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (48.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (60.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (98.2ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (46.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (78.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:43:08) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "Profile", "Felles-Operaen-h550.png"]}
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (50.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (50.8ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (50.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (50.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (73.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mFileNotFoundPage Columns (53.9ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mLayout Columns (51.6ms)[0m   [0mSHOW FIELDS FROM `layouts`[0m
+  [4;36;1mLayout Load (50.9ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (52.2ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (50.7ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (50.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (50.7ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (52.1ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;35;1mPagePart Columns (52.5ms)[0m   [0mSHOW FIELDS FROM `page_parts`[0m
+  [4;36;1mPagePart Load (50.7ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (50.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (50.6ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSHOW TABLES[0m
+Completed in 2353ms (DB: 2114) | 404 [http://0.0.0.0/images/Profile/Felles-Operaen-h550.png]
+  [4;36;1mSQL (53.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:43:12) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "logo.png"]}
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (50.9ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (51.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (50.4ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (50.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (54.6ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mLayout Load (52.6ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (51.7ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (50.6ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (50.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (50.6ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (50.5ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (50.7ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (50.6ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;35;1mSnippet Load (50.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (51.0ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 2052ms (DB: 1932) | 404 [http://0.0.0.0/images/logo.png]
+  [4;35;1mSQL (51.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (139.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:43:15) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>"/"}
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (51.9ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (52.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`status_id` = 90) [0m
+  [4;35;1mSQL (51.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mLayout Load (53.0ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (52.2ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (50.9ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (51.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (52.7ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (51.1ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 1) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (51.6ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 1) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (51.8ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;35;1mSnippet Load (57.2ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 1912ms (DB: 1807) | 200 [http://0.0.0.0/]
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:43:19) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "logo.png"]}
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (47.2ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mPage Load (47.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mPage Load (48.2ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;36;1mPage Load (47.3ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mPage Load (47.7ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;35;1mSQL (47.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mLayout Load (47.9ms)[0m   [0mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mSnippet Columns (48.0ms)[0m   [0;1mSHOW FIELDS FROM `snippets`[0m
+  [4;35;1mSnippet Load (47.4ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (47.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (47.4ms)[0m   [0mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;36;1mSnippet Load (47.3ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;35;1mPagePart Load (50.1ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;36;1mPagePart Load (47.2ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;35;1mSnippet Load (47.3ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;36;1mSnippet Load (47.5ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (47.7ms)[0m   [0mSHOW TABLES[0m
+Completed in 1930ms (DB: 1807) | 404 [http://0.0.0.0/images/logo.png]
+  [4;36;1mSQL (47.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (48.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (49.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.4ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (46.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:43:22) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "favicon.png"]}
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (162.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (54.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (51.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (46.9ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (46.6ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (46.8ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (46.9ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (46.8ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mLayout Load (47.0ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (47.8ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (47.0ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (47.1ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (46.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (46.9ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (46.9ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (46.9ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;35;1mSnippet Load (46.8ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 2029ms (DB: 1909) | 404 [http://0.0.0.0/images/favicon.png]
+  [4;35;1mSQL (46.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (50.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (52.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (52.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (47.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.1ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (47.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (46.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (46.8ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (65.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.3ms)[0m   [0mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SiteController#show_page (for 127.0.0.1 at 2014-09-12 12:44:40) [GET]
+  Parameters: {"controller"=>"site", "action"=>"show_page", "url"=>["images", "logo.png"]}
+  [4;35;1mSQL (51.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (51.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (128.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mPage Load (50.8ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mPage Load (50.5ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`slug` = 'images') AND (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mPage Load (220.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1) ORDER BY virtual DESC, title ASC[0m
+  [4;35;1mPage Load (50.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;35;1mPage Load (52.7ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.parent_id = 1 AND (status_id = 100 and (class_name = 'FileNotFoundPage'))) ORDER BY virtual DESC, title ASC LIMIT 1[0m
+  [4;36;1mSQL (56.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 1) [0m
+  [4;36;1mLayout Load (51.1ms)[0m   [0;1mSELECT * FROM `layouts` WHERE (`layouts`.`id` = 1) ORDER BY name[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`parent_id` IS NULL) LIMIT 1[0m
+  [4;35;1mSnippet Columns (51.6ms)[0m   [0mSHOW FIELDS FROM `snippets`[0m
+  [4;36;1mSnippet Load (50.5ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'navigation') ORDER BY name LIMIT 1[0m
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mPage Load (50.6ms)[0m   [0;1mSELECT * FROM `pages` WHERE ((virtual = 0) and (status_id = 100)) AND (`pages`.parent_id = 1) ORDER BY published_at ASC, virtual DESC, title ASC[0m
+  [4;35;1mSnippet Load (50.7ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'right_column') ORDER BY name LIMIT 1[0m
+DEPRECATION WARNING: Deprecated radius tag <r:meta> will be removed or significantly changed in radiant 2.0. (called from warn_of_tag_deprecation at /Users/martins/.rvm/gems/ruby-1.9.3-p547@rockwerner/gems/radiant-1.1.4/lib/radiant/taggable.rb:55)
+  [4;36;1mPagePart Load (50.7ms)[0m   [0;1mSELECT * FROM `page_parts` WHERE (`page_parts`.page_id = 9) ORDER BY id, name[0m
+  [4;35;1mPagePart Load (50.7ms)[0m   [0mSELECT * FROM `page_parts` WHERE (`page_parts`.`name` = 'body') AND (`page_parts`.page_id = 9) ORDER BY id LIMIT 1[0m
+  [4;36;1mSnippet Load (50.7ms)[0m   [0;1mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'print_me') ORDER BY name LIMIT 1[0m
+  [4;35;1mSnippet Load (50.7ms)[0m   [0mSELECT * FROM `snippets` WHERE (`snippets`.`name` = 'footer') ORDER BY name LIMIT 1[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+Completed in 2311ms (DB: 2182) | 404 [http://0.0.0.0/images/logo.png]
+  [4;35;1mSQL (50.8ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.6ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (53.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (50.5ms)[0m   [0;1mSELECT DISTINCT class_name FROM pages WHERE class_name <> '' AND class_name IS NOT NULL[0m
