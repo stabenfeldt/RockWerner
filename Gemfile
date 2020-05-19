@@ -37,7 +37,7 @@ gem "compass-rails", "~> 1.0.3"
 
 # Default Extensions
 gem "radiant-archive-extension",             "~> 1.0.7"
-gem "radiant-clipped-extension",             "~> 1.1.0"
+gem "radiant-clipped-extension", "~> 1.1.1"
 gem "radiant-debug-extension",               "~> 1.0.2"
 gem "radiant-exporter-extension",            "~> 1.1.0"
 gem "radiant-markdown_filter-extension",     "~> 1.0.2"
